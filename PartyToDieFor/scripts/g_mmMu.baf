@@ -1,0 +1,55 @@
+IF
+	Global("g_mMstart","GLOBAL",0) 
+    See([PC])
+   // Delay(5)
+THEN
+    RESPONSE #100
+        StartDialogueNoSet(Player1)
+	//	PlaySong(0)
+	//	PlaySound("g_mmFigS")
+	SetGlobal("g_mMstart","GLOBAL",1) 
+	SetGlobal ("g_mMfight", "GLOBAL", 1)
+Continue()
+END
+
+
+//////////////////////
+// Cast Web
+//////////////////////
+IF
+	See(NearestEnemyOf(Myself))
+	Global ("g_mFwe", "GLOBAL", 0)
+
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("g_mmFigS")
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_WEB)
+		SetGlobal ("g_mFwe", "GLOBAL", 1)
+END
+
+
+//////////////////////
+// Cast Chain Lightning
+//////////////////////
+IF
+	See(NearestEnemyOf(Myself))
+	Global ("g_mFcl", "GLOBAL", 0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+		SetGlobal ("g_mFcl", "GLOBAL", 1)
+END
+
+//////////////////////
+// Cast Charm
+//////////////////////
+IF
+	See(NearestEnemyOf(Myself))
+	Global ("g_mFch", "GLOBAL", 0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)
+		SetGlobal ("g_mFch", "GLOBAL", 1)
+
+END

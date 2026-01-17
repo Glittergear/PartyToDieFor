@@ -1,0 +1,10 @@
+IF
+Global("g_mmd1","GLOBAL",0) 
+    See([PC])
+    //Delay(5)
+THEN
+    RESPONSE #100
+        Dialogue([PC])
+SetGlobal("g_mmd1","GLOBAL",1) 
+
+END

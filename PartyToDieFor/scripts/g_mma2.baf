@@ -1,0 +1,5 @@
+IF Global("g_mmMQ1","GLOBAL",2) //make adrik disappear
+	THEN
+		RESPONSE #100
+		DestroySelf()
+END

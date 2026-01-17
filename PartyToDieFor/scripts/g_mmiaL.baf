@@ -1,0 +1,9 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        MoveViewObject(Myself,INSTANT)
+		ActionOverride("g_mmia2",EscapeArea()) //MoveToPoint([1431.2690])
+		SmallWait(4)
+END

@@ -1,0 +1,11 @@
+//spawns Shipmaster Adrik
+
+IF
+Global("Gadrip","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("g_mmia",[2484.1716],3)  
+SetGlobal("Gadrip","GLOBAL",1)
+
+Continue()
+END

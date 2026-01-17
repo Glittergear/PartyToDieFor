@@ -1,0 +1,24 @@
+IF
+	Global("firstSpawn","GLOBAL",0)
+	THEN
+	RESPONSE #100
+	CreateCreature("g_mmca",[155.211],3)  
+	CreateCreature("g_mmdr",[204.204],3)  
+	CreateCreature("g_mmTT",[286.224],3)  
+	CreateCreature("g_mmPe",[293.348],3)  
+	CreateCreature("g_mmTr",[339.271],3)  
+	CreateCreature("g_mmEB",[266.209],3)  
+	SetGlobal("firstSpawn","GLOBAL",1)
+END
+
+IF Global("g_mmMQ1","GLOBAL",6) //make dead Carasta
+	THEN
+		RESPONSE #100
+		Kill("g_mmca")
+END
+
+IF Global("g_mmMQ1","GLOBAL",7) //force Tenadar leaving
+	THEN
+		RESPONSE #100
+		ActionOverride("g_mmTT",EscapeArea())
+END

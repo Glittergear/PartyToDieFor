@@ -1,0 +1,134 @@
+//////////////////////////////////////
+// FOG
+//////////////////////////////////////
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    Explore()
+    Weather(FOG)
+    Continue()
+END
+
+IF
+  PartyRested()
+THEN
+  RESPONSE #100
+    Weather(FOG)
+    Continue()
+END
+
+//////////////////////////////////////
+// ARRIVAL
+//////////////////////////////////////
+
+IF
+	Global("gAdrikSp2","GLOBAL",0)
+		THEN
+			RESPONSE #100
+			CreateCreature("g_mmia2",[1260.2616],3)  
+			SetGlobal("gAdrikSp2","GLOBAL",1)
+	Continue()
+END
+
+//IF
+//	Exists(Player1)
+//	AreaCheckObject("g_mmi",Player1) 
+//	Global("g_mmiMusic","GLOBAL",0)
+//	AreaCheck("g_mmi")
+//	GlobalGT("g_mmMQ","GLOBAL", 9)
+//THEN
+//	RESPONSE #100
+//	SetGlobal("g_mmiMusic","GLOBAL",1)
+//	PlaySound("g_mmFig")
+//	Continue()
+//END
+
+
+//////////////////////////////////////
+// LAST ONE STANDING: TENADAR
+//////////////////////////////////////
+IF Global("g_mmCh","GLOBAL", 1) Global("g_mmChs","GLOBAL", 0)
+	THEN
+		RESPONSE #100
+	//	PlaySong(0)
+	//	PlaySound("g_mmFig")
+		CreateCreature("g_mmteK",[3377.1566],3)  //Tenadar killer
+		CreateCreature("g_mmDrD",[3371.1455],3)  //dead Drunlo
+		CreateCreature("g_mmtrD",[3410.1492],3)  //dead Tremona
+	//	ActionOverride("g_mmteK",StartDialogueNoSet(Player1)
+	//	ActionOverride("g_mmteK", Enemy())
+		SetGlobal("g_mmChs","GLOBAL", 1)
+	Continue()
+
+END
+
+//////////////////////////////////////
+// LAST ONE STANDING: TREMONA
+//////////////////////////////////////
+IF Global("g_mmCh","GLOBAL", 2) Global("g_mmChs","GLOBAL", 0)
+	THEN
+		RESPONSE #100
+	//	PlaySong(0)
+	//	PlaySound("g_mmFig")
+		CreateCreature("g_mmtrK",[3377.1566],3)  // Tremona killer
+		CreateCreature("g_mmDrD",[3371.1455],3)  //dead Drunlo
+		CreateCreature("g_mmteD",[3410.1492],3)  //dead Tenadar
+	//	ActionOverride("g_mmtrK",StartDialogueNoSet(Player1)
+	//	ActionOverride("g_mmtrK", Enemy())
+		SetGlobal("g_mmChs","GLOBAL", 1)
+	Continue()
+
+END
+
+//////////////////////////////////////
+// ZASHIR APPEARS EARLY
+//////////////////////////////////////
+
+//////////////////////////////////////////////
+// ZASHIR APPEARS ON TIME - TENADAR WAS LAST
+//////////////////////////////////////////////
+IF Global("g_mmCh","GLOBAL", 1) Global("g_mmChs","GLOBAL", 1) Dead("g_mmteK") //make tenK
+	THEN
+		RESPONSE #100
+	//	PlaySong(0)
+	//	PlaySound("g_mmFig")
+		CreateCreature("g_mmMu",[3608.1380],3)  
+	//	ActionOverride("g_mmMu",StartDialogueNoSet(Player1)
+	//	ActionOverride("g_mmMu", Enemy())
+		SetGlobal("g_mmChs","GLOBAL", 2)
+	Continue()
+
+END
+
+//////////////////////////////////////////////
+// ZASHIR APPEARS ON TIME - TREMONA WAS LAST
+//////////////////////////////////////////////
+IF Global("g_mmCh","GLOBAL", 2) Global("g_mmChs","GLOBAL", 1) Dead("g_mmtrK") //make treK
+	THEN
+		RESPONSE #100
+	//	PlaySong(0)
+	//	PlaySound("g_mmFig")
+		CreateCreature("g_mmMu",[3608.1380],3)  
+	//	ActionOverride("g_mmMu",StartDialogueNoSet(Player1)
+	//	ActionOverride("g_mmMu", Enemy())
+		SetGlobal("g_mmChs","GLOBAL", 2)
+	Continue()
+
+END
+
+//////////////////////////////////////
+// FIST APPEARS
+//////////////////////////////////////
+IF Dead("g_mmMu") Global("g_mmChs","GLOBAL", 2)
+	THEN
+		RESPONSE #100
+		CreateCreature("g_mmFF",[3184.1455],3)  
+		ActionOverride("g_mmFF",StartDialogueNoSet(Player1)
+		SetGlobal("g_mmChs","GLOBAL", 3)
+	Continue()
+
+END
+
+
