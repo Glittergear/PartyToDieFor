@@ -4,6 +4,9 @@ VERSION ~1.0~
 
 
 BEGIN  ~A Party to Die For~
+DESIGNATED 0
+LABEL ~A-Party_to-Die-For-Glittergear~
+REQUIRE_PREDICATE GAME_IS ~bgee eet bgt~ ~This mod need BGEE, BGT or EET~
 
 LAF HANDLE_AUDIO END
 ADD_MUSIC ~g_mmBG~ ~%MOD_FOLDER%/music/g_mmBG.mus~
@@ -23,57 +26,75 @@ COPY ~%MOD_FOLDER%/music/g_mmFigS.ogg~ ~MUSIC/g_mmFigS/g_mmFigS.ogg~
 COPY ~PartyToDieFor/creatures/g_mmCA.cre~ ~override/g_mmCA.cre~ 
 	SAY NAME1 ~Carasta Orsmander~
 	SAY NAME2 ~Carasta Orsmander~
+	
 COPY ~PartyToDieFor/creatures/g_mmCAd.cre~ ~override/g_mmCAd.cre~ 
 	SAY NAME1 ~Carasta Orsmander~
 	SAY NAME2 ~Carasta Orsmander~
+	
 COPY ~PartyToDieFor/creatures/g_mmDr.cre~ ~override/g_mmDr.cre~ 
 	SAY NAME1 ~Drunlo~
 	SAY NAME2 ~Drunlo~
+	
 COPY ~PartyToDieFor/creatures/g_mmDrD.cre~ ~override/g_mmDrD.cre~ 
 	SAY NAME1 ~Drunlo~
 	SAY NAME2 ~Drunlo~
+	
 COPY ~PartyToDieFor/creatures/g_mmEB.cre~ ~override/g_mmEB.cre~ 
 	SAY NAME1 ~Enger Blazanar~
 	SAY NAME2 ~Enger Blazanar~
+	
 COPY ~PartyToDieFor/creatures/g_mmEBd.cre~ ~override/g_mmEBd.cre~ 
 	SAY NAME1 ~Enger Blazanar~
 	SAY NAME2 ~Enger Blazanar~
+	
 COPY ~PartyToDieFor/creatures/g_mmff.cre~ ~override/g_mmff.cre~ 
 	SAY NAME1 ~Flaming Fist~
 	SAY NAME2 ~Flaming Fist~
+	
 COPY ~PartyToDieFor/creatures/g_mmia.cre~ ~override/g_mmia.cre~ 
 	SAY NAME1 ~Shipmaster Adrik~
 	SAY NAME2 ~Shipmaster Adrik~
+	
 COPY ~PartyToDieFor/creatures/g_mmia2.cre~ ~override/g_mmia2.cre~ 
 	SAY NAME1 ~Shipmaster Adrik~
 	SAY NAME2 ~Shipmaster Adrik~
+	
 COPY ~PartyToDieFor/creatures/g_mmim.cre~ ~override/g_mmim.cre~ 
 	SAY NAME1 ~Messenger~
 	SAY NAME2 ~Messenger~
+	
 COPY ~PartyToDieFor/creatures/g_mmMu.cre~ ~override/g_mmMu.cre~ 
 	SAY NAME1 ~Zashir Anskuln~
 	SAY NAME2 ~Zashir Anskuln~
+	
 COPY ~PartyToDieFor/creatures/g_mmPe.cre~ ~override/g_mmPe.cre~ 
 	SAY NAME1 ~Pelial~
 	SAY NAME2 ~Pelial~
+	
 COPY ~PartyToDieFor/creatures/g_mmTr.cre~ ~override/g_mmTr.cre~ 
 	SAY NAME1 ~Tremona~
 	SAY NAME2 ~Tremona~
+	
 COPY ~PartyToDieFor/creatures/g_mmTrK.cre~ ~override/g_mmTrK.cre~ 
 	SAY NAME1 ~Tremona~
 	SAY NAME2 ~Tremona~
+	
 COPY ~PartyToDieFor/creatures/g_mmTrD.cre~ ~override/g_mmTrD.cre~ 
 	SAY NAME1 ~Tremona~
 	SAY NAME2 ~Tremona~
+	
 COPY ~PartyToDieFor/creatures/g_mmTT.cre~ ~override/g_mmTT.cre~ 
 	SAY NAME1 ~Tenadar Thornber~
 	SAY NAME2 ~Tenadar Thornber~
+	
 COPY ~PartyToDieFor/creatures/g_mmTeK.cre~ ~override/g_mmTeK.cre~ 
 	SAY NAME1 ~Tenadar Thornber~
 	SAY NAME2 ~Tenadar Thornber~
+	
 COPY ~PartyToDieFor/creatures/g_mmTeD.cre~ ~override/g_mmTeD.cre~ 
 	SAY NAME1 ~Tenadar Thornber~
 	SAY NAME2 ~Tenadar Thornber~
+	
 COPY ~PartyToDieFor/creatures/g_mmza.cre~ ~override/g_mmza.cre~ 
 	SAY NAME1 ~Zombie Adrik~
 	SAY NAME2 ~Zombie Adrik~
@@ -380,10 +401,6 @@ APPEND ~FOGAREA.2da~ ~g_mmi  2  100  100  75   75   175   135   135   50~
 //APPEND ~FOGAREA.2da~ ~g_mmi  0.8  75  85  45   45   145   95   95   25~
 
 UNLESS ~g_mmi~
-
-
-
-
 
 
 LAF HANDLE_AUDIO END

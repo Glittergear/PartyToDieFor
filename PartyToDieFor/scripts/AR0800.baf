@@ -1,11 +1,10 @@
 //spawns Messanger
 
 IF
-Global("Gmesssp","GLOBAL",0)
+	Global("Gmesssp","MYAREA",0)
 THEN
-RESPONSE #100
-CreateCreature("g_mmim",[1692.2400],3)  
-SetGlobal("Gmesssp","GLOBAL",1)
-
-Continue()
+	RESPONSE #100
+		CreateCreature("g_mmim",[1692.2400],3)  
+		SetGlobal("Gmesssp","MYAREA",1)
+		Continue()
 END

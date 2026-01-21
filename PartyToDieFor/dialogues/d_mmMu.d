@@ -84,6 +84,6 @@ IF ~~ THEN BEGIN liar
 END
 
 IF ~~ THEN BEGIN noTalk
-	SAY ~No. Die, and be done with it.~ [g_mmz15] IF ~~ THEN DO ~
-	Enemy() ~ EXIT
+	SAY ~No. Die, and be done with it.~ [g_mmz15]
+		IF ~~ THEN DO ~Enemy()~ EXIT
 END

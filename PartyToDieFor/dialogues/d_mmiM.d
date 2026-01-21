@@ -38,14 +38,12 @@ END
 
 IF ~~ THEN BEGIN byenowE
 	SAY ~Most excellent. No need to worry about a courier fee; Zashir already accounted for that. Good <DAYNIGHT> to you, my <LADYLORD>.~
-IF ~~ THEN DO ~
-	SetGlobal("g_mmMQ1","GLOBAL",1) GiveItemCreate("g_mmi7",Player1,1,1,0) EscapeArea()~ EXIT 
+		IF ~~ THEN DO ~SetGlobal("g_mmMQ1","GLOBAL",1) GiveItemCreate("g_mmi7",Player1,1,1,0) EscapeArea()~ EXIT 
 END
 
 IF ~~ THEN BEGIN byenowG
 	SAY ~Most excellent. No need to worry about a courier fee; Zashir already accounted for that. Good <DAYNIGHT> to you, my <LADYLORD>.~
-IF ~~ THEN DO ~
-	SetGlobal("g_mmMQ1","GLOBAL",1) GiveItemCreate("g_mmi8",Player1,1,1,0) EscapeArea()~ EXIT 
+		IF ~~ THEN DO ~SetGlobal("g_mmMQ1","GLOBAL",1) GiveItemCreate("g_mmi8",Player1,1,1,0) EscapeArea()~ EXIT 
 END
 
 END

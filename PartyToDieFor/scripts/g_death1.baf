@@ -1,13 +1,13 @@
 IF
-    True()
+	True()
 THEN
-    RESPONSE #100
-        CutSceneId(Player1)
-        MoveViewObject(Myself,INSTANT)
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveViewObject(Myself,INSTANT)
 		Wait(2)
 		CreateCreature("g_mmza",[226.258],NW)
 		SmallWait(4)
-		ActionOverride("g_mmza",StartDialogueNoSet(Player1))
 		SetGlobal ("g_mmMQ1","GLOBAL",3)
+		ActionOverride("g_mmza",StartDialogueNoSet(Player1))
 		//Kill(g_mmza)
 END

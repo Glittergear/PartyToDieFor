@@ -1,5 +1,6 @@
-IF Global("g_mmMQ1","GLOBAL",4) //make EB disappear
-	THEN
-		RESPONSE #100
+IF
+	Global("g_mmMQ1","GLOBAL",4) //make EB disappear
+THEN
+	RESPONSE #100
 		DestroySelf()
 END

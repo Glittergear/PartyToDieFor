@@ -38,10 +38,12 @@ CHAIN IF ~True()~ THEN d_mmza threat
 	== d_mmza ~Groan...~
 END
 	++ ~(Continue)~ GOTO deathZom
+	
 APPEND d_mmza
 
 IF ~~ THEN BEGIN deathZom
-	SAY ~....~ IF ~~ THEN  DO ~Kill("g_mmza")~ EXIT
+	SAY ~....~
+	IF ~~ THEN DO ~Kill("g_mmza")~ EXIT
 END
 
 END //overall dialogue file end

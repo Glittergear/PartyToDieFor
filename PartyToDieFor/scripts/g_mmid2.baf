@@ -1,10 +1,9 @@
 IF
-Global("g_mmd2","GLOBAL",0) 
-    See([PC])
-  //  Delay(5)
+	Global("g_mmd2","LOCALS",0) 
+	See([PC])
+	//  Delay(5)
 THEN
     RESPONSE #100
+		SetGlobal("g_mmd2","LOCALS",1) 
         Dialogue([PC])
-SetGlobal("g_mmd2","GLOBAL",1) 
-
 END

@@ -1,15 +1,14 @@
 IF
-	Global("g_mMstart","GLOBAL",0) 
-    See([PC])
-   // Delay(5)
+	Global("g_mMstart","LOCALS",0) 
+	See([PC])
+	// Delay(5)
 THEN
-    RESPONSE #100
-        StartDialogueNoSet(Player1)
-	//	PlaySong(0)
-	//	PlaySound("g_mmFigS")
-	SetGlobal("g_mMstart","GLOBAL",1) 
-	SetGlobal ("g_mMfight", "GLOBAL", 1)
-Continue()
+	RESPONSE #100
+		SetGlobal("g_mMstart","LOCALS",1) 
+		SetGlobal ("g_mMfight","GLOBAL", 1)
+		//	PlaySong(0)
+		//	PlaySound("g_mmFigS")
+		StartDialogueNoSet(Player1)
 END
 
 
@@ -18,14 +17,13 @@ END
 //////////////////////
 IF
 	See(NearestEnemyOf(Myself))
-	Global ("g_mFwe", "GLOBAL", 0)
-
+	Global ("g_mFwe","LOCALS", 0)
 THEN
 	RESPONSE #100
 		PlaySong(0)
 		PlaySound("g_mmFigS")
 		ForceSpell(NearestEnemyOf(Myself),WIZARD_WEB)
-		SetGlobal ("g_mFwe", "GLOBAL", 1)
+		SetGlobal ("g_mFwe","LOCALS", 1)
 END
 
 
@@ -34,11 +32,11 @@ END
 //////////////////////
 IF
 	See(NearestEnemyOf(Myself))
-	Global ("g_mFcl", "GLOBAL", 0)
+	Global ("g_mFcl","LOCALS", 0)
 THEN
 	RESPONSE #100
 		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
-		SetGlobal ("g_mFcl", "GLOBAL", 1)
+		SetGlobal ("g_mFcl","LOCALS", 1)
 END
 
 //////////////////////
@@ -46,10 +44,9 @@ END
 //////////////////////
 IF
 	See(NearestEnemyOf(Myself))
-	Global ("g_mFch", "GLOBAL", 0)
+	Global ("g_mFch","LOCALS", 0)
 THEN
 	RESPONSE #100
 		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)
-		SetGlobal ("g_mFch", "GLOBAL", 1)
-
+		SetGlobal ("g_mFch","LOCALS", 1)
 END

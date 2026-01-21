@@ -1,5 +1,6 @@
-IF Global("g_mmMQ1","GLOBAL",6) //make CA disappear
-	THEN
-		RESPONSE #100
+IF
+	Global("g_mmMQ1","GLOBAL",6) //make CA disappear
+THEN
+	RESPONSE #100
 		DestroySelf()
 END

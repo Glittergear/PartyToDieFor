@@ -1,9 +1,11 @@
 IF
-	Global("g_EBdead","GLOBAL",0) Global("g_mmMQ1","GLOBAL",4) Global("g_mmEng","GLOBAL",1)
-	THEN
+	Global("g_EBdead","MYAREA",0)
+	Global("g_mmMQ1","GLOBAL",4)
+	Global("g_mmEng","GLOBAL",1)
+THEN
 	RESPONSE #100 
-	CreateCreature("g_mmEB",[266.209],3)  
-	Kill("g_mmEB")
-	SetGlobal("g_EBdead","GLOBAL",1)
-	Continue()
+		CreateCreature("g_mmEB",[266.209],3)  
+		Kill("g_mmEB")
+		SetGlobal("g_EBdead","MYAREA",1)
+		Continue()
 END

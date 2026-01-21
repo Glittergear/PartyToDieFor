@@ -11,15 +11,13 @@ IF ~True() ~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN liar1
-SAY ~I’m not lying! Safana… <CHARNAME>… I’m sorry, but I can’t–I can’t fight it!~
-IF ~~ THEN DO ~
-	Enemy() ~ EXIT
+	SAY ~I’m not lying! Safana… <CHARNAME>… I’m sorry, but I can’t–I can’t fight it!~
+	IF ~~ THEN DO ~Enemy() ~ EXIT
 END
 
 
 
 IF ~~ THEN BEGIN liar2
-SAY ~I’m not lying! <CHARNAME>… I’m sorry, but I can’t–I can’t fight it!~
-IF ~~ THEN DO ~
-	Enemy() ~ EXIT
+	SAY ~I’m not lying! <CHARNAME>… I’m sorry, but I can’t–I can’t fight it!~
+	IF ~~ THEN DO ~Enemy() ~ EXIT
 END
