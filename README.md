@@ -1,11 +1,11 @@
-# Blood And Faith
+# A Party to Die for
 
 [![Release](https://img.shields.io/github/v/release/Glittergear/PartyToDieFor?include_prereleases&color=41788a)](https://github.com/Glittergear/PartyToDieFor/releases)
 [![Published](https://img.shields.io/github/release-date-pre/Glittergear/PartyToDieFor?display_date=published_at&label=published&color=014a69)](https://github.com/Glittergear/PartyToDieFor/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Glittergear/PartyToDieFor/total?color=41788a)](https://github.com/Glittergear/PartyToDieFor/releases)
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Russian-014a69)](https://github.com/Glittergear/PartyToDieFor/releases)
-[![Games](https://img.shields.io/badge/games-BGT%20%7C%20BG2:EE%20%7C%20EET-41788a)](https://github.com/Glittergear/PartyToDieFor/releases)
+[![Games](https://img.shields.io/badge/games-BGT%20%7C%20BG:EE%20%7C%20EET-41788a)](https://github.com/Glittergear/PartyToDieFor/releases)
 <!--
 [![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-014a69)](https://github.com/Glittergear/PartyToDieFor/releases)
 -->
@@ -93,5 +93,10 @@ None known. Let me know if you find any.
 --------------
 #### CHANGELOG
 --------------
+
+1.1 Translation, Traification, EET
+- CpmVars / Autotra / IconV
+- Label / Require_predicate / Designated / Ini / Readme / WeiduModPackager
+- Delete old map notes en unused entrances / triggers
 
 1.0 Initial release
