@@ -433,22 +433,55 @@ Weight: 2 */
 //areas
 /////////////////////
 COPY ~PartyToDieFor/Areas/g_mmi.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS%~ (8)
+	LPF ALTER_AREA_REGION
+		STR_VAR
+		region_name              = Door2010
+		destination_area = g_mmih0
+	END
+	LPF ALTER_AREA_REGION
+		STR_VAR
+		region_name              = Door2011
+		destination_area = g_mmi11
+	END
 	ADD_MAP_NOTE #3846 #1160 ~violet~ @50 /* Second Hut */
 	ADD_MAP_NOTE #3261 #1233 ~violet~ @51 /* First Hut */
 	ADD_MAP_NOTE #4025 #1636 ~violet~ @52 /* Third Hut */
 	ADD_MAP_NOTE #3531 #1827 ~violet~ @53 /* Fourth Hut */
 	ADD_MAP_NOTE #1707 #1350 ~violet~ @54 /* Dining Hall */
+
 COPY ~PartyToDieFor/Areas/g_mmi11.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_StoreHut2%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih0.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_StoreHut2%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih1.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_GreatHut%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih2.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_KaishasHut%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih3.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_KaishasHut%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih4.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_LargeHut2%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih5.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_LargeHut2%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih6.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_LargeHut1%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih7.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_LargeHut1%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih8.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_StoreHut2%~ (8)
+
 COPY ~PartyToDieFor/Areas/g_mmih9.are~ ~override~
+	WRITE_ASCIIE 0x08 ~%IsleofBalduranS_StoreHut2%~ (8)
 
 
 
