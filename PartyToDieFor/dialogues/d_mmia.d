@@ -1,13 +1,13 @@
 BEGIN d_mmia
 
 IF ~ Global("g_mmMQ1","GLOBAL",1)~ THEN BEGIN 0
-	SAY ~You must be <CHARNAME>! Aye, I was told to be expecting you. Would you like to go to Dukes’ Retreat Isle?~
-		++ ~Yes.~ GOTO yes
-		++ ~Not yet.~ GOTO no
+	SAY @0 /* You must be <CHARNAME>! Aye, I was told to be expecting you. Would you like to go to Dukes’ Retreat Isle? */
+		++ @1 /* Yes. */ GOTO yes
+		++ @2 /* Not yet. */ GOTO no
 END
 
 IF ~~ yes
-	SAY ~Very well. All aboard!~
+	SAY @3 /* Very well. All aboard! */
 		IF ~~ THEN DO ~ActionOverride(Player1,LeaveAreaLUA("g_mmi","",[1386.2669],4))
 						ActionOverride(Player2,LeaveAreaLUA("g_mmi","",[1390.2669],4))
 						ActionOverride(Player3,LeaveAreaLUA("g_mmi","",[1348.2661],4))
@@ -18,12 +18,12 @@ IF ~~ yes
 END
 
 IF ~~ no
-	SAY ~Well, talk to me when you are.~  
+	SAY @4 /* Well, talk to me when you are. */  
 		IF ~~ THEN EXIT
 END
 
 IF ~ !Global("g_mmMQ1","GLOBAL",1)~ THEN BEGIN 0
-	SAY ~Sorry, but I'm not sure you're one of the people I'm waiting for.~  
+	SAY @5 /* Sorry, but I'm not sure you're one of the people I'm waiting for. */  
 		IF ~~ THEN EXIT
 END
 

@@ -1,0 +1,170 @@
+@0    = ~This mod need BGEE, BGT or EET~
+@1    = ~A Party to Die For~
+@2    = ~Carasta Orsmander~
+@3    = ~Drunlo~
+@4    = ~Enger Blazanar~
+@5    = ~Flaming Fist~
+@6    = ~Shipmaster Adrik~
+@7    = ~Messenger~
+@8    = ~Zashir Anskuln~
+@9    = ~Pelial~
+@10   = ~Tremona~
+@11   = ~Tenadar Thornber~
+@12   = ~Zombie Adrik~
+@13   = ~Zashir's Confession~
+@14   = ~To the Flaming Fist, or whoever stumbles upon this note,
+
+From my youth, I realized that my nature was contradictory--desiring Balance, but reveling in chaos. Passionate about justice, but tempted to bloodshed.
+
+Seeking inner peace and balance within myself, I became a druid. One day a child fled from slavers into my forest. I defended her against them. She escaped, but I was captured in the process.
+
+The slavers sent me and others to a Temple of Bhaal to be sacrificed, and here, my desire to murder resurfaced. We managed to escape. I took care of those with me to the best of my ability. But they died one by one, nevertheless, due to the cruelty of others. 
+
+I could not get the memories of the others out of my head. We had escaped the cult of Bhaal, but Murder claimed us nonetheless. All except me. I became an adventurer to distract myself. Killing rampaging demihumans, destroying the undead... it was barely satisfying.
+
+When I fell under a mysterious wasting ailment, one that no magic seemed able to cure, I knew what my dying wish would be.
+
+To commit murder. Premediated, planned. This would be different from my kills as an adventurer. But I would not kill innocents, no. I would kill fellow murderers, the ones the law wouldn't touch.
+
+Each person on this island, save for one, is responsible for the death of at least one person I took into my care:
+
+Captain Adrik: The captain of the ship who took us to the Temple of Bhaal.
+Captain Pelial: The pirate captain who raided Adrik’s ship, took the valuables, but did not free us.
+Enger Blazanar: Embezzled funds from charity. Consequently, there were not enough healing potions, and so one died of injuries.
+Tenadar Thornber: Follower of Loviatar, he hired three people and tortured two to death. One managed to escape.
+Carasta Orsmander: Manipulated the courts to prevent Tenadar from being declared guilty. The one who escaped Tenadar was found dead shortly after.
+Tremona: Introduced the last of us to Drunlo.
+Drunlo: Introduced the last of us to Black Lotus, and she died of an overdose one year later.
+
+I will kill them, one by one.
+
+And I will enjoy it.
+ ~
+@15   = ~Carasta's Invitation~
+@16   = ~	Dearest Carasta Orsmander,
+I have heard that, out of all the nobility in Baldur’s Gate, it is you that someone should meet. I have heard that you are peerless in all social circles and the type of noble woman who gets things done.
+
+I greatly admire such characteristics. I am an adventurer of no small fortune in Calimshan, though I am originally from Baldur’s Gate. I have purchased Dukes’ Retreat Isle, and, if you are willing, it would be an honor to host a woman such as yourself.
+
+If this invitation pleases you, show it to Captain Adrik. I have arranged for him to take you to the island.
+
+	Yours truly,
+	Zashir Anskuln
+ ~
+@17   = ~Enger's Invitation~
+@18   = ~	My dearest Enger,
+You may not remember me, but years ago, I was a recipient of one of your charities, which saved my life. Afterwards, I went south to Calimshan, making my name as an adventurer.
+
+Still, I owe it to you. If you did not save my life so many years ago, none of these successes would have happened.
+
+I have amassed a moderate amount of fortune and a large amount of homesickness. As such, I will be returning to Baldur’s Gate. I have recently purchased Dukes’ Retreat Isle, and it would be an honor to host the one that had saved my life so many years ago. 
+
+Show this invitation to Captain Adrik. I have arranged for him to take you to the island.
+
+	Yours truly,
+	Zashir Anskuln
+ ~
+@19   = ~Tenedar's Invitation~
+@20   = ~Dear Tenadar Thornber,
+
+We share a mutual Patroness, you and I. I would like to extend you an invitation to Dukes’ Retreat Isle. I am having a gathering there, and I believe you would find it quite entertaining.
+
+Speak with Shipmaster Adrik. I have made the arrangements for your transport to the Isle.
+
+	Yours truly,
+	Zashir Anskuln
+ ~
+@21   = ~Adrik's Invitation~
+@22   = ~	Dear Captain Adrik,
+
+I have heard of your prowess as a captain, and I would request your services for a minor task. I have recently purchased Dukes’ Retreat Isle, and I am inviting several guests for a gathering.
+
+There are seven guests in total, and then myself. I will pay you the large fee of 2,000 gold per individual, to a total sum of 16,000 gold. I understand that you are busy, and I hope the amount that I am offering will suffice.
+
+Please let me know at your earliest convenience.
+
+	Best wishes,
+	Zashir Anskuln
+ ~
+@23   = ~Drunlo's Invitation~
+@24   = ~Dear Drunlo,
+
+I have heard of your alchemical talents and desire for knowledge. You are spoken of highly in arcane circles as a promising alchemist.
+
+For this reason, I would like to invite you to Duke’s Retreat Isle for an alchemical summit. Yes, the Isle is known for parties under the ownership of Tyndal Marlow, but now that I have purchased it, I would like to build a new reputation for it.
+
+Do not worry yourself about bringing your own alchemical equipment. I will ensure that the summit is well-stocked. You needn’t worry about costs, either–this invitation includes a full sponsorship.
+
+If this is acceptable, show this invitation to Captain Adrik. I have arranged for him to take you to the island.
+
+	Yours truly,
+	Zashir Anskuln
+ ~
+@25   = ~Tremona's Invitation~
+@26   = ~ Tremona's Invitation~
+@27   = ~(This is written in some sort of code you don't recognize)~
+@28   = ~Pelial's Invitation~
+@30   = ~Captain Pelial,
+
+I write to you with the utmost respect. I understand that you are a man as capable on land as you are at sea, and I have heard rumors that may interest you.
+
+I have recently purchased Dukes’ Retreat Isle, and in the paperwork, I discovered the most interesting fact. Supposedly, a late Pirate Lord of Brynnlaw has buried treasure on the island! 
+
+I understand that you are skilled at finding such treasures–far better than I would be, I am certain. As such, I would like to invite you to the island. I would be happy to have a 60-40 split in your favor. 
+
+If, somehow, the treasure does not tempt you, I will be hosting a gathering there. I wish to live up to the reputation of my predecessor, and as such, there will be plenty of food, drink, and entertainment.
+
+Please let me know if you can attend, at your earliest convenience.
+
+	Best wishes,
+	Zashir Anskuln
+ ~
+@31   = ~Invitation from Zashir~
+@32   = ~To <CHARNAME> and Company,
+
+It is my honor to offer you an invitation to my first get-together on Dukes’ Retreat Isle. I am not certain if you are aware of the history of the Isle, but the previous owner hosted numerous exclusive retreats and parties. I hope to carry on this tradition.
+
+Your exploits in the region, especially in Nashkel, caught my attention, and it would be an honor to host an adventurer such as yourself. The other guests will be adventurers and a few nobility of Baldur’s Gate.
+
+If the chance of relaxation doesn’t tempt you, perhaps this might: I have information on the Iron Throne. I will be at the Isle as well and would be happy to tell you what I know. I hope you understand that I can only tell you in person–writing such information down puts us both at risk, as well as the messenger carrying this invitation. I pray that you will not hold my caution against me.
+
+Yours Truly,
+Zashir Anskuln
+
+ ~
+@34   = ~First Rhyme~
+@35   = ~The first little fly fell off-ship. Claimed by the waves, like so many of his slaves. ~
+@36   = ~Second Rhyme~
+@37   = ~Each of you has lived a lie. Here, caught in my web, all of you will die.~
+@38   = ~Third Rhyme~
+@39   = ~The third to die only pretended he cared, in order to take as much as he dared.~
+@40   = ~Fourth Rhyme~
+@41   = ~Curtain-close for the puppeteer. Her death was a bore, and now there are four.~
+@42   = ~Fifth Rhyme~
+@43   = ~More died because words spoken untrue. Of eight flies, now there are two.~
+@44   = ~Final Rhyme~
+@45   = ~The guests couldn’t recall, but I remembered them all. For what they had done, eight flies would become none.~
+@46   = ~Strange Poison~
+@47   = ~You probably shouldn't drink this.~
+@48   = ~Ornate Dagger~
+@49   = ~This poisoned dagger is ornate and is likely used in ceremonies for some dark god.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target suffers 1 point of poison damage per second for 15 seconds (Save vs. Poison negates)
+
+THAC0: +2 
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 2~
+@50   = ~Second Hut~
+@51   = ~First Hut~
+@52   = ~Third Hut~
+@53   = ~Fourth Hut~
+@54   = ~Dining Hall~

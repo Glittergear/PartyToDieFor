@@ -1,12 +1,80 @@
 BACKUP ~weidu_external/PartyToDieFor/backup~
 AUTHOR ~Glittergear~
-VERSION ~1.0~
+VERSION ~1.1~
+
+README ~PartyToDieFor/PartyToDieFor.txt~
+
+ALWAYS
 
 
-BEGIN  ~A Party to Die For~
+	ACTION_IF GAME_IS ~bgee~ BEGIN
+
+		INCLUDE ~BloodAndFaith/lib/g3_bgee_cpmvars.tpa~
+		PRINT ~Game is bgee~
+
+	END ELSE ACTION_IF GAME_IS ~eet~ BEGIN
+
+		INCLUDE ~eet/other/cpmvars/eet_cpmvars.tpa~
+		PRINT ~Game is EET~
+
+
+	END ELSE ACTION_IF GAME_IS ~bgt~ BEGIN
+
+		INCLUDE ~BloodAndFaith/lib/g3_bgt_cpmvars.tpa~
+		PRINT ~Game is BGT~
+
+	END
+
+    //Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~PartyToDieFor/Languages/english~			~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%~
+      COPY ~PartyToDieFor/Languages/%LANGUAGE%~			~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+// Convert tra files in UTF8 if EE and let them in ANSI if oBG
+
+	ACTION_IF GAME_IS ~bgee eet~ BEGIN
+//  ACTION_DEFINE_ARRAY PartyToDieFor_noconvert BEGIN install END
+
+		ACTION_DEFINE_ARRAY PartyToDieFor_reload BEGIN setup END
+
+			LAF HANDLE_CHARSETS
+				INT_VAR
+				infer_charsets = 1
+				STR_VAR
+				tra_path = EVAL ~weidu_external/PartyToDieFor/Languages/autotra~
+				out_path = EVAL ~weidu_external/PartyToDieFor/Languages/autotra/UTF8~
+				iconv_path = ~PartyToDieFor/Languages/autotra/iconv~
+//				 noconvert_array = PartyToDieFor_noconvert
+				reload_array = PartyToDieFor_reload
+			END
+
+	// UTF8 only
+	COPY ~weidu_external/PartyToDieFor/Languages/autotra/UTF8/%LANGUAGE%~				~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%~
+	COPY ~weidu_external/PartyToDieFor/Languages/autotra/UTF8/%LANGUAGE%/Dlg~			~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%/Dlg~
+	END
+
+END
+
+AUTO_TRA ~weidu_external/PartyToDieFor/Languages/autotra/%s~
+
+
+LANGUAGE ~English~
+         ~english~
+         ~PartyToDieFor/Languages/english/setup.tra~
+
+LANGUAGE ~Russian (by CblblP & Arcanecoast.ru)~
+         ~russian~
+         ~PartyToDieFor/Languages/english/setup.tra~
+         ~PartyToDieFor/Languages/russian/setup.tra~
+
+
+BEGIN  @1 /* A Party to Die For */
 DESIGNATED 0
 LABEL ~A-Party_to-Die-For-Glittergear~
-REQUIRE_PREDICATE GAME_IS ~bgee eet bgt~ ~This mod need BGEE, BGT or EET~
+REQUIRE_PREDICATE GAME_IS ~bgee eet bgt~ @0 /* This mod need BGEE, BGT or EET */
 
 LAF HANDLE_AUDIO END
 ADD_MUSIC ~g_mmBG~ ~%MOD_FOLDER%/music/g_mmBG.mus~
@@ -24,80 +92,80 @@ COPY ~%MOD_FOLDER%/music/g_mmFigS.ogg~ ~MUSIC/g_mmFigS/g_mmFigS.ogg~
 //creatures
 /////////////////////
 COPY ~PartyToDieFor/creatures/g_mmCA.cre~ ~override/g_mmCA.cre~ 
-	SAY NAME1 ~Carasta Orsmander~
-	SAY NAME2 ~Carasta Orsmander~
+	SAY NAME1 @2 /* Carasta Orsmander */
+	SAY NAME2 @2 /* Carasta Orsmander */
 	
 COPY ~PartyToDieFor/creatures/g_mmCAd.cre~ ~override/g_mmCAd.cre~ 
-	SAY NAME1 ~Carasta Orsmander~
-	SAY NAME2 ~Carasta Orsmander~
+	SAY NAME1 @2 /* Carasta Orsmander */
+	SAY NAME2 @2 /* Carasta Orsmander */
 	
 COPY ~PartyToDieFor/creatures/g_mmDr.cre~ ~override/g_mmDr.cre~ 
-	SAY NAME1 ~Drunlo~
-	SAY NAME2 ~Drunlo~
+	SAY NAME1 @3 /* Drunlo */
+	SAY NAME2 @3 /* Drunlo */
 	
 COPY ~PartyToDieFor/creatures/g_mmDrD.cre~ ~override/g_mmDrD.cre~ 
-	SAY NAME1 ~Drunlo~
-	SAY NAME2 ~Drunlo~
+	SAY NAME1 @3 /* Drunlo */
+	SAY NAME2 @3 /* Drunlo */
 	
 COPY ~PartyToDieFor/creatures/g_mmEB.cre~ ~override/g_mmEB.cre~ 
-	SAY NAME1 ~Enger Blazanar~
-	SAY NAME2 ~Enger Blazanar~
+	SAY NAME1 @4 /* Enger Blazanar */
+	SAY NAME2 @4 /* Enger Blazanar */
 	
 COPY ~PartyToDieFor/creatures/g_mmEBd.cre~ ~override/g_mmEBd.cre~ 
-	SAY NAME1 ~Enger Blazanar~
-	SAY NAME2 ~Enger Blazanar~
+	SAY NAME1 @4 /* Enger Blazanar */
+	SAY NAME2 @4 /* Enger Blazanar */
 	
 COPY ~PartyToDieFor/creatures/g_mmff.cre~ ~override/g_mmff.cre~ 
-	SAY NAME1 ~Flaming Fist~
-	SAY NAME2 ~Flaming Fist~
+	SAY NAME1 @5 /* Flaming Fist */
+	SAY NAME2 @5 /* Flaming Fist */
 	
 COPY ~PartyToDieFor/creatures/g_mmia.cre~ ~override/g_mmia.cre~ 
-	SAY NAME1 ~Shipmaster Adrik~
-	SAY NAME2 ~Shipmaster Adrik~
+	SAY NAME1 @6 /* Shipmaster Adrik */
+	SAY NAME2 @6 /* Shipmaster Adrik */
 	
 COPY ~PartyToDieFor/creatures/g_mmia2.cre~ ~override/g_mmia2.cre~ 
-	SAY NAME1 ~Shipmaster Adrik~
-	SAY NAME2 ~Shipmaster Adrik~
+	SAY NAME1 @6 /* Shipmaster Adrik */
+	SAY NAME2 @6 /* Shipmaster Adrik */
 	
 COPY ~PartyToDieFor/creatures/g_mmim.cre~ ~override/g_mmim.cre~ 
-	SAY NAME1 ~Messenger~
-	SAY NAME2 ~Messenger~
+	SAY NAME1 @7 /* Messenger */
+	SAY NAME2 @7 /* Messenger */
 	
 COPY ~PartyToDieFor/creatures/g_mmMu.cre~ ~override/g_mmMu.cre~ 
-	SAY NAME1 ~Zashir Anskuln~
-	SAY NAME2 ~Zashir Anskuln~
+	SAY NAME1 @8 /* Zashir Anskuln */
+	SAY NAME2 @8 /* Zashir Anskuln */
 	
 COPY ~PartyToDieFor/creatures/g_mmPe.cre~ ~override/g_mmPe.cre~ 
-	SAY NAME1 ~Pelial~
-	SAY NAME2 ~Pelial~
+	SAY NAME1 @9 /* Pelial */
+	SAY NAME2 @9 /* Pelial */
 	
 COPY ~PartyToDieFor/creatures/g_mmTr.cre~ ~override/g_mmTr.cre~ 
-	SAY NAME1 ~Tremona~
-	SAY NAME2 ~Tremona~
+	SAY NAME1 @10 /* Tremona */
+	SAY NAME2 @10 /* Tremona */
 	
 COPY ~PartyToDieFor/creatures/g_mmTrK.cre~ ~override/g_mmTrK.cre~ 
-	SAY NAME1 ~Tremona~
-	SAY NAME2 ~Tremona~
+	SAY NAME1 @10 /* Tremona */
+	SAY NAME2 @10 /* Tremona */
 	
 COPY ~PartyToDieFor/creatures/g_mmTrD.cre~ ~override/g_mmTrD.cre~ 
-	SAY NAME1 ~Tremona~
-	SAY NAME2 ~Tremona~
+	SAY NAME1 @10 /* Tremona */
+	SAY NAME2 @10 /* Tremona */
 	
 COPY ~PartyToDieFor/creatures/g_mmTT.cre~ ~override/g_mmTT.cre~ 
-	SAY NAME1 ~Tenadar Thornber~
-	SAY NAME2 ~Tenadar Thornber~
+	SAY NAME1 @12 /* Tenadar Thornber */
+	SAY NAME2 @12 /* Tenadar Thornber */
 	
 COPY ~PartyToDieFor/creatures/g_mmTeK.cre~ ~override/g_mmTeK.cre~ 
-	SAY NAME1 ~Tenadar Thornber~
-	SAY NAME2 ~Tenadar Thornber~
+	SAY NAME1 @11 /* Tenadar Thornber */
+	SAY NAME2 @11 /* Tenadar Thornber */
 	
 COPY ~PartyToDieFor/creatures/g_mmTeD.cre~ ~override/g_mmTeD.cre~ 
-	SAY NAME1 ~Tenadar Thornber~
-	SAY NAME2 ~Tenadar Thornber~
+	SAY NAME1 @11 /* Tenadar Thornber */
+	SAY NAME2 @11 /* Tenadar Thornber */
 	
 COPY ~PartyToDieFor/creatures/g_mmza.cre~ ~override/g_mmza.cre~ 
-	SAY NAME1 ~Zombie Adrik~
-	SAY NAME2 ~Zombie Adrik~
+	SAY NAME1 @12 /* Zombie Adrik */
+	SAY NAME2 @12 /* Zombie Adrik */
 
 /////////////////////
 //spawns
@@ -145,9 +213,9 @@ COMPILE ~PartyToDieFor/dialogues/d_mmza.d~
 /////////////////////
 
 COPY ~PartyToDieFor/items/g_mmcon.itm~ ~override/g_mmcon.itm~ 
-     SAY NAME1 ~Zashir's Confession~
-     SAY NAME2 ~Zashir's Confession~
-     SAY DESC ~To the Flaming Fist, or whoever stumbles upon this note,
+     SAY NAME1 @13 /* Zashir's Confession */
+     SAY NAME2 @13 /* Zashir's Confession */
+     SAY DESC @14 /* To the Flaming Fist, or whoever stumbles upon this note,
 
 From my youth, I realized that my nature was contradictory--desiring Balance, but reveling in chaos. Passionate about justice, but tempted to bloodshed.
 
@@ -174,12 +242,12 @@ Drunlo: Introduced the last of us to Black Lotus, and she died of an overdose on
 I will kill them, one by one.
 
 And I will enjoy it.
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi1.itm~ ~override/g_mmi1.itm~ 
-     SAY NAME1 ~Carasta's Invitation~
-     SAY NAME2 ~Carasta's Invitation~
-     SAY DESC ~	Dearest Carasta Orsmander,
+     SAY NAME1 @15 /* Carasta's Invitation */
+     SAY NAME2 @15 /* Carasta's Invitation */
+     SAY DESC @16 /* 	Dearest Carasta Orsmander,
 I have heard that, out of all the nobility in Baldur’s Gate, it is you that someone should meet. I have heard that you are peerless in all social circles and the type of noble woman who gets things done.
 
 I greatly admire such characteristics. I am an adventurer of no small fortune in Calimshan, though I am originally from Baldur’s Gate. I have purchased Dukes’ Retreat Isle, and, if you are willing, it would be an honor to host a woman such as yourself.
@@ -188,12 +256,12 @@ If this invitation pleases you, show it to Captain Adrik. I have arranged for hi
 
 	Yours truly,
 	Zashir Anskuln
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi2.itm~ ~override/g_mmi2.itm~ 
-     SAY NAME1 ~Enger's Invitation~
-     SAY NAME2 ~Enger's Invitation~
-     SAY DESC ~	My dearest Enger,
+     SAY NAME1 @17 /* Enger's Invitation */
+     SAY NAME2 @17 /* Enger's Invitation */
+     SAY DESC @18 /* 	My dearest Enger,
 You may not remember me, but years ago, I was a recipient of one of your charities, which saved my life. Afterwards, I went south to Calimshan, making my name as an adventurer.
 
 Still, I owe it to you. If you did not save my life so many years ago, none of these successes would have happened.
@@ -204,12 +272,12 @@ Show this invitation to Captain Adrik. I have arranged for him to take you to th
 
 	Yours truly,
 	Zashir Anskuln
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi3.itm~ ~override/g_mmi3.itm~ 
-     SAY NAME1 ~Tenedar's Invitation~
-     SAY NAME2 ~Tenedar's Invitation~
-     SAY DESC ~Dear Tenadar Thornber,
+     SAY NAME1 @19 /* Tenedar's Invitation */
+     SAY NAME2 @19 /* Tenedar's Invitation */
+     SAY DESC @20 /* Dear Tenadar Thornber,
 
 We share a mutual Patroness, you and I. I would like to extend you an invitation to Dukes’ Retreat Isle. I am having a gathering there, and I believe you would find it quite entertaining.
 
@@ -217,12 +285,12 @@ Speak with Shipmaster Adrik. I have made the arrangements for your transport to 
 
 	Yours truly,
 	Zashir Anskuln
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi4.itm~ ~override/g_mmi4.itm~ 
-     SAY NAME1 ~Adrik's Invitation~
-     SAY NAME2 ~Adrik's Invitation~
-     SAY DESC ~	Dear Captain Adrik,
+     SAY NAME1 @21 /* Adrik's Invitation */
+     SAY NAME2 @21 /* Adrik's Invitation */
+     SAY DESC @22 /* 	Dear Captain Adrik,
 
 I have heard of your prowess as a captain, and I would request your services for a minor task. I have recently purchased Dukes’ Retreat Isle, and I am inviting several guests for a gathering.
 
@@ -232,12 +300,12 @@ Please let me know at your earliest convenience.
 
 	Best wishes,
 	Zashir Anskuln
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi5.itm~ ~override/g_mmi5.itm~ 
-     SAY NAME1 ~Drunlo's Invitation~
-     SAY NAME2 ~Drunlo's Invitation~
-     SAY DESC ~Dear Drunlo,
+     SAY NAME1 @23 /* Drunlo's Invitation */
+     SAY NAME2 @23 /* Drunlo's Invitation */
+     SAY DESC @24 /* Dear Drunlo,
 
 I have heard of your alchemical talents and desire for knowledge. You are spoken of highly in arcane circles as a promising alchemist.
 
@@ -249,17 +317,17 @@ If this is acceptable, show this invitation to Captain Adrik. I have arranged fo
 
 	Yours truly,
 	Zashir Anskuln
- ~
+  */
 
 COPY ~PartyToDieFor/items/g_mmi6.itm~ ~override/g_mmi6.itm~ 
-     SAY NAME1 ~Tremona's Invitation~
-     SAY NAME2 ~ Tremona's Invitation~
-     SAY DESC ~(This is written in some sort of code you don't recognize)~
+     SAY NAME1 @25 /* Tremona's Invitation */
+     SAY NAME2 @26 /*  Tremona's Invitation */
+     SAY DESC @27 /* (This is written in some sort of code you don't recognize) */
 
 COPY ~PartyToDieFor/items/g_mmi7.itm~ ~override/g_mmi7.itm~ 
-     SAY NAME1 ~Pelial's Invitation~
-     SAY NAME2 ~ Pelial's Invitation~
-     SAY DESC ~	Captain Pelial,
+     SAY NAME1 @28 /* Pelial's Invitation */
+     SAY NAME2 @28 /* Pelial's Invitation */
+     SAY DESC @30 /* Captain Pelial,
 
 I write to you with the utmost respect. I understand that you are a man as capable on land as you are at sea, and I have heard rumors that may interest you.
 
@@ -273,29 +341,13 @@ Please let me know if you can attend, at your earliest convenience.
 
 	Best wishes,
 	Zashir Anskuln
- ~
+  */
 
 
-COPY ~PartyToDieFor/items/g_mmi8.itm~ ~override/g_mmi8.itm~ //NOT EVIL CHARNAME
-     SAY NAME1 ~Invitation from Zashir~
-     SAY NAME2 ~Invitation from Zashir~
-     SAY DESC ~	To <CHARNAME> and Company,
-
-It is my honor to offer you an invitation to my first get-together on Dukes’ Retreat Isle. I am not certain if you are aware of the history of the Isle, but the previous owner hosted numerous exclusive retreats and parties. I hope to carry on this tradition.
-
-Your exploits in the region, especially in Nashkel, caught my attention, and it would be an honor to host an adventurer such as yourself. The other guests will be adventurers and a few nobility of Baldur’s Gate.
-
-If the chance of relaxation doesn’t tempt you, perhaps this might: I have information on the Iron Throne. I will be at the Isle as well and would be happy to tell you what I know. I hope you understand that I can only tell you in person–writing such information down puts us both at risk, as well as the messenger carrying this invitation. I pray that you will not hold my caution against me.
-
-Yours Truly,
-Zashir Anskuln
-
- ~
-
-COPY ~PartyToDieFor/items/g_mmi9.itm~ ~override/g_mmi9.itm~ //EVIL CHARNAME
-     SAY NAME1 ~Invitation from Zashir~
-     SAY NAME2 ~Invitation from Zashir~
-     SAY DESC ~	To <CHARNAME> and Company,
+COPY ~PartyToDieFor/items/g_mmi8.itm~ ~override/g_mmi8.itm~ // NOT EVIL CHARNAME
+     SAY NAME1 @31 /* Invitation from Zashir */
+     SAY NAME2 @31 /* Invitation from Zashir */
+     SAY DESC @32 /* To <CHARNAME> and Company,
 
 It is my honor to offer you an invitation to my first get-together on Dukes’ Retreat Isle. I am not certain if you are aware of the history of the Isle, but the previous owner hosted numerous exclusive retreats and parties. I hope to carry on this tradition.
 
@@ -305,47 +357,63 @@ If the chance of relaxation doesn’t tempt you, perhaps this might: I have info
 
 Yours Truly,
 Zashir Anskuln
- ~
+
+  */
+
+COPY ~PartyToDieFor/items/g_mmi9.itm~ ~override/g_mmi9.itm~ // EVIL CHARNAME
+     SAY NAME1 @31 /* Invitation from Zashir */
+     SAY NAME2 @31 /* Invitation from Zashir */
+     SAY DESC @32 /* To <CHARNAME> and Company,
+
+It is my honor to offer you an invitation to my first get-together on Dukes’ Retreat Isle. I am not certain if you are aware of the history of the Isle, but the previous owner hosted numerous exclusive retreats and parties. I hope to carry on this tradition.
+
+Your exploits in the region, especially in Nashkel, caught my attention, and it would be an honor to host an adventurer such as yourself. The other guests will be adventurers and a few nobility of Baldur’s Gate.
+
+If the chance of relaxation doesn’t tempt you, perhaps this might: I have information on the Iron Throne. I will be at the Isle as well and would be happy to tell you what I know. I hope you understand that I can only tell you in person–writing such information down puts us both at risk, as well as the messenger carrying this invitation. I pray that you will not hold my caution against me.
+
+Yours Truly,
+Zashir Anskuln
+  */
 
 COPY ~PartyToDieFor/items/g_mmr1.itm~ ~override/g_mmr1.itm~ 
-     SAY NAME1 ~First Rhyme~
-     SAY NAME2 ~First Rhyme~
-     SAY DESC ~The first little fly fell off-ship. Claimed by the waves, like so many of his slaves. ~
+     SAY NAME1 @34 /* First Rhyme */
+     SAY NAME2 @34 /* First Rhyme */
+     SAY DESC @35 /* The first little fly fell off-ship. Claimed by the waves, like so many of his slaves.  */
 
 COPY ~PartyToDieFor/items/g_mmr2.itm~ ~override/g_mmr2.itm~ 
-     SAY NAME1 ~Second Rhyme~
-     SAY NAME2 ~Second Rhyme~
-     SAY DESC ~Each of you has lived a lie. Here, caught in my web, all of you will die.~
+     SAY NAME1 @36 /* Second Rhyme */
+     SAY NAME2 @36 /* Second Rhyme */
+     SAY DESC @37 /* Each of you has lived a lie. Here, caught in my web, all of you will die. */
 
 COPY ~PartyToDieFor/items/g_mmr3.itm~ ~override/g_mmr3.itm~ 
-     SAY NAME1 ~Third Rhyme~
-     SAY NAME2 ~Third Rhyme~
-     SAY DESC ~The third to die only pretended he cared, in order to take as much as he dared.~
+     SAY NAME1 @38 /* Third Rhyme */
+     SAY NAME2 @38 /* Third Rhyme */
+     SAY DESC @39 /* The third to die only pretended he cared, in order to take as much as he dared. */
 
 COPY ~PartyToDieFor/items/g_mmr4.itm~ ~override/g_mmr4.itm~ 
-     SAY NAME1 ~Fourth Rhyme~
-     SAY NAME2 ~Fourth Rhyme~
-     SAY DESC ~Curtain-close for the puppeteer. Her death was a bore, and now there are four.~
+     SAY NAME1 @40 /* Fourth Rhyme */
+     SAY NAME2 @40 /* Fourth Rhyme */
+     SAY DESC @41 /* Curtain-close for the puppeteer. Her death was a bore, and now there are four. */
 
 COPY ~PartyToDieFor/items/g_mmr5.itm~ ~override/g_mmr5.itm~ 
-     SAY NAME1 ~Fifth Rhyme~
-     SAY NAME2 ~Fifth Rhyme~
-     SAY DESC ~More died because words spoken untrue. Of eight flies, now there are two.~
+     SAY NAME1 @42 /* Fifth Rhyme */
+     SAY NAME2 @42 /* Fifth Rhyme */
+     SAY DESC @43 /* More died because words spoken untrue. Of eight flies, now there are two. */
 
 COPY ~PartyToDieFor/items/g_mmr8.itm~ ~override/g_mmr8.itm~ 
-     SAY NAME1 ~Final Rhyme~
-     SAY NAME2 ~Final Rhyme~
-     SAY DESC ~The guests couldn’t recall, but I remembered them all. For what they had done, eight flies would become none.~
+     SAY NAME1 @44 /* Final Rhyme */
+     SAY NAME2 @44 /* Final Rhyme */
+     SAY DESC @45 /* The guests couldn’t recall, but I remembered them all. For what they had done, eight flies would become none. */
 
 COPY ~PartyToDieFor/items/g_mmPoi.itm~ ~override/g_mmPoi.itm~ 
-     SAY NAME1 ~Strange Poison~
-     SAY NAME2 ~Strange Poison~
-     SAY DESC ~You probably shouldn't drink this.~
+     SAY NAME1 @46 /* Strange Poison */
+     SAY NAME2 @46 /* Strange Poison */
+     SAY DESC @47 /* You probably shouldn't drink this. */
 
 COPY ~PartyToDieFor/items/g_mmDag.itm~ ~override/g_mmDag.itm~ 
-     SAY NAME1 ~Ornate Dagger~
-     SAY NAME2 ~Ornate Dagger~
-     SAY DESC ~This poisoned dagger is ornate and is likely used in ceremonies for some dark god.
+     SAY NAME1 @48 /* Ornate Dagger */
+     SAY NAME2 @48 /* Ornate Dagger */
+     SAY DESC @49 /* This poisoned dagger is ornate and is likely used in ceremonies for some dark god.
 
 STATISTICS:
 
@@ -360,17 +428,17 @@ Type: One-handed
 Requires:
  3 Strength
 
-Weight: 2~
+Weight: 2 */
 
 /////////////////////
 //areas
 /////////////////////
 COPY ~PartyToDieFor/Areas/g_mmi.are~ ~override~
-//	ADD_MAP_NOTE #3846 #1160 ~violet~ ~Second Hut~
-//	ADD_MAP_NOTE #3261 #1233 ~violet~ ~First Hut~
-//	ADD_MAP_NOTE #4025 #1636 ~violet~ ~Third Hut~
-//	ADD_MAP_NOTE #3531 #1827 ~violet~ ~Fourth Hut~
-//	ADD_MAP_NOTE #1707 #1350 ~violet~ ~Dining Hall~
+	ADD_MAP_NOTE #3846 #1160 ~violet~ @50 /* Second Hut */
+	ADD_MAP_NOTE #3261 #1233 ~violet~ @51 /* First Hut */
+	ADD_MAP_NOTE #4025 #1636 ~violet~ @52 /* Third Hut */
+	ADD_MAP_NOTE #3531 #1827 ~violet~ @53 /* Fourth Hut */
+	ADD_MAP_NOTE #1707 #1350 ~violet~ @54 /* Dining Hall */
 COPY ~PartyToDieFor/Areas/g_mmi11.are~ ~override~
 COPY ~PartyToDieFor/Areas/g_mmih0.are~ ~override~
 COPY ~PartyToDieFor/Areas/g_mmih1.are~ ~override~
