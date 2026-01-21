@@ -9,7 +9,7 @@ ALWAYS
 
 	ACTION_IF GAME_IS ~bgee~ BEGIN
 
-		INCLUDE ~BloodAndFaith/lib/g3_bgee_cpmvars.tpa~
+		INCLUDE ~PartyToDieFor/lib/g3_bgee_cpmvars.tpa~
 		PRINT ~Game is bgee~
 
 	END ELSE ACTION_IF GAME_IS ~eet~ BEGIN
@@ -20,7 +20,7 @@ ALWAYS
 
 	END ELSE ACTION_IF GAME_IS ~bgt~ BEGIN
 
-		INCLUDE ~BloodAndFaith/lib/g3_bgt_cpmvars.tpa~
+		INCLUDE ~PartyToDieFor/lib/g3_bgt_cpmvars.tpa~
 		PRINT ~Game is BGT~
 
 	END
@@ -53,7 +53,6 @@ ALWAYS
 
 	// UTF8 only
 	COPY ~weidu_external/PartyToDieFor/Languages/autotra/UTF8/%LANGUAGE%~				~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%~
-	COPY ~weidu_external/PartyToDieFor/Languages/autotra/UTF8/%LANGUAGE%/Dlg~			~weidu_external/PartyToDieFor/Languages/autotra/%LANGUAGE%/Dlg~
 	END
 
 END
@@ -193,19 +192,19 @@ COMPILE ~PartyToDieFor/Scripts/g_mmMu.baf~
 //dialogues
 /////////////////////
 COMPILE ~PartyToDieFor/dialogues/d_mmCA.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmDr.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmEB.d~
+COMPILE ~PartyToDieFor/dialogues/d_mmDr.d~ EVALUATE_BUFFER
+COMPILE ~PartyToDieFor/dialogues/d_mmEB.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmff.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmia.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmia2.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmiM.d~
+COMPILE ~PartyToDieFor/dialogues/d_mmia2.d~ EVALUATE_BUFFER
+COMPILE ~PartyToDieFor/dialogues/d_mmiM.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmPe.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmMu.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmTr.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmTrk.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmTT.d~
+COMPILE ~PartyToDieFor/dialogues/d_mmTT.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmTTk.d~
-COMPILE ~PartyToDieFor/dialogues/d_mmza.d~
+COMPILE ~PartyToDieFor/dialogues/d_mmza.d~ EVALUATE_BUFFER
 
 
 /////////////////////

@@ -52,9 +52,9 @@ Everyone else has 0-1 interjection(s)
 
 - Do not use Glyph's voice in conjunction with AI in any way or for any reason
 - Feel free to mod the mod as you like; just don't reupload
-- 
+
 - For anything concerning the music, please reach out to the original creators.
-- 
+
 - Feel free to reach out to me if you know how to tra-ify and/or make the mod EET compatible. I haven't figured out how to do that myself yet :'(
 
 
