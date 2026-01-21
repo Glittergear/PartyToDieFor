@@ -120,8 +120,6 @@ IF ~~ THEN BEGIN notyet
 		IF ~~ THEN EXIT
 END
 
-//END
-
 
 ///////////////////////////////////
 // DEATH 4 CARASTA & DECISION
@@ -163,7 +161,7 @@ IF ~Global("g_mmMQ1","GLOBAL",7)~ THEN BEGIN deTen
 		++ @36 /* I think it's Tremora. */ GOTO accuseTre
 END
 
-END
+END // APPEND d_mmDr
 
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",7)~ THEN d_mmDr deTre
 	@38 /* Well, you heard what she said about Pelial; Pelial had wronged her before. Before she turned to crime, she relied on a charity that Enger Blazanar stole from. Once Enger Blazanar took over the charity, the money obviously dried up, and Tremona was outta luck. She finally thought he caught a break when her awful uncle died and she could get inheritance, but Carasta Orsmander swooped in and manipulated the courts to give her the money instead. Revenge is a powerful motivator. */
@@ -175,9 +173,6 @@ END
 	++ @34 /* How do you think Zashir fits into all of this? */ GOTO zashir
 	++ @35 /* I think it's Tenadar. */ GOTO accuseTen
 	++ @36 /* I think it's Tremora. */ GOTO accuseTre
-
-APPEND d_mmDr
-END // ???
 
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",7)~ THEN d_mmDr deNotMe
 	@40 /* Look, I know I got you alone here, and I know that's suspicious and what the killer would do. But I’m a retired drug dealer, not a murderer! I’m trying to turn my life around, and that doesn’t involve trapping people on an island and killing them off one by one, like some kind of insane animal. */
@@ -204,7 +199,7 @@ IF ~Global("g_mmMQ1","GLOBAL",7)~ THEN BEGIN deWhy
 		++ @36 /* I think it's Tremora. */ GOTO accuseTre
 END
 
-END
+END // APPEND d_mmDr
 
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",7)~ THEN d_mmDr zashir
 	@45 /* I don't think Zashir actually exists. Think about it. Remember when the zombie showed up? Everyone admitted that no one has met Zashir. The invitations were all a lie--mine said that this was going to be an alchemical conference! Whoever "Zashir" is knows about us, about what would tempt us to come here. We don't know "Zashir", but "Zashir" knows us. It's got to be a fake name, I'm sure of it.  */
@@ -257,4 +252,4 @@ IF ~~ THEN BEGIN deTreKill
 		IF ~~ THEN DO ~ SetGlobal("g_mmCh","GLOBAL",1) SetGlobal("g_mmMQ1","GLOBAL",10) EscapeArea()~ EXIT
 END
 
-END
+END // APPEND d_mmDr

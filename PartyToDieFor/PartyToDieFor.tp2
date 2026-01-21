@@ -468,9 +468,3 @@ APPEND ~FOGAREA.2da~ ~g_mmi  2  100  100  75   75   175   135   135   50~
 //APPEND ~FOGAREA.2da~ ~g_mmi  0.8  75  85  45   45   145   95   95   25~
 
 UNLESS ~g_mmi~
-
-
-LAF HANDLE_AUDIO END
-
-
-

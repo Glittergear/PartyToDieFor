@@ -107,9 +107,6 @@ END
 	+~!InParty("Xzar")~+ @29 /* I can't be the murderer. Why would I do something like this? */ GOTO whywouldi
 	+~InParty("Xzar")~+ @29 /* I can't be the murderer. Why would I do something like this? */ GOTO whywouldiXzar
 
-APPEND d_mmTT
-END // ???
-
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",4) PartyHasItem("g_mmr3") InParty("Xzar")~ THEN d_mmTT whywouldiXzar
 	@30 /* That is a good question, isn't it? */
 	== %EDWIN_JOINED% IF ~InParty("Edwin")~ THEN @31 /* Bah! I can think of a few reasons, but we are competent enough to not be caught doing so (or at least, I am). */
@@ -119,10 +116,6 @@ END
 	++ @34 /* I don't love you, Xzar. */ GOTO xzarNoLove
 	++ @35 /* Of course I love you, but I have other ideas. */ GOTO xzarYesLove
 
-APPEND d_mmTT
-END // ???
-
-
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",4) PartyHasItem("g_mmr3") InParty("Xzar")~ THEN d_mmTT xzarNoLove
 	@36 /* Er... */
 	== %XZAR_JOINED% IF ~InParty("Xzar")~ THEN @37 /* Of course you do! Why else would you choose to be my companion, and why else would I choose to be yours? You aren’t Monty, you wouldn’t travel with someone you don’t love in one way or another, would you? */
@@ -130,18 +123,12 @@ END
 	++ @38 /* Let's just... move on. */ GOTO moveOn
 	++ @39 /* There's plenty of reasons, but let's move on. */ GOTO moveOn
 
-APPEND d_mmTT
-END // ???
-
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",4) PartyHasItem("g_mmr3") InParty("Xzar")~ THEN d_mmTT xzarYesLove
 	@36 /* Er... */
 	== %XZAR_JOINED% IF ~InParty("Xzar")~ THEN @40 /* Other ideas? I hope they are just as good as corpses. Perhaps something to do with rabbits? Rabbits always make me hungry. I hope you’ll also bring snacks. */
 END
 	++ @38 /* Let's just... move on. */ GOTO moveOn
 	++ @41 /* Of course I'll bring snacks. But let's focus. */ GOTO moveOn
-
-APPEND d_mmTT
-END // ???
 
 CHAIN IF ~Global("g_mmMQ1","GLOBAL",4) PartyHasItem("g_mmr3") !InParty("Xzar")~ THEN d_mmTT whywouldi
 	@30 /* That is a good question, isn't it? */
@@ -193,7 +180,7 @@ IF ~Global("g_mmMQ1","GLOBAL",5)~ THEN BEGIN char5
 END
 
 
-END
+END // APPEND d_mmTT
 ///////////////////////////////////
 // DEATH 4 CARASTA
 ///////////////////////////////////
@@ -217,4 +204,4 @@ IF ~~ THEN BEGIN leavingNow
 					ActionOverride("g_mmTr",EscapeArea())~ EXIT 
 END
 
-END //overall dialogue file end
+END //APPEND d_mmTT / overall dialogue file end

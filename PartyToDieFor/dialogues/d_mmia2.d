@@ -8,6 +8,3 @@ CHAIN IF ~Global("g_mmig","GLOBAL",0)~ THEN d_mmia2 imOut
 	== d_mmia2 @4 /* I believe everyone else is in that Dining Hall there. Enjoy your stay! */
 END
 		IF ~~ THEN DO ~SetGlobal("g_mmig","GLOBAL",1) EscapeArea()~ EXIT //mmig = g means gone
-
-APPEND d_mmia2
-END // ???
