@@ -69,6 +69,9 @@ LANGUAGE ~Russian (by CblblP & Arcanecoast.ru)~
          ~PartyToDieFor/Languages/english/setup.tra~
          ~PartyToDieFor/Languages/russian/setup.tra~
 
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~PartyToDieFor/Languages/schinese/setup.tra~
 
 BEGIN  @1 /* A Party to Die For */
 DESIGNATED 0
@@ -151,8 +154,8 @@ COPY ~PartyToDieFor/creatures/g_mmTrD.cre~ ~override/g_mmTrD.cre~
 	SAY NAME2 @10 /* Tremona */
 
 COPY ~PartyToDieFor/creatures/g_mmTT.cre~ ~override/g_mmTT.cre~
-	SAY NAME1 @12 /* Tenadar Thornber */
-	SAY NAME2 @12 /* Tenadar Thornber */
+	SAY NAME1 @11 /* Tenadar Thornber */
+	SAY NAME2 @11 /* Tenadar Thornber */
 
 COPY ~PartyToDieFor/creatures/g_mmTeK.cre~ ~override/g_mmTeK.cre~
 	SAY NAME1 @11 /* Tenadar Thornber */
@@ -169,8 +172,8 @@ COPY ~PartyToDieFor/creatures/g_mmza.cre~ ~override/g_mmza.cre~
 /////////////////////
 //spawns
 /////////////////////
-EXTEND_TOP ~AR0800.bcs~ ~PartyToDieFor/Scripts/AR0800.baf~ //spawns messenger
-EXTEND_TOP ~AR1200.bcs~ ~PartyToDieFor/Scripts/AR1200.baf~ //spawns adrik
+EXTEND_TOP ~%EBaldursGate_BCS%.bcs~ ~PartyToDieFor/Scripts/AR0800.baf~ //spawns messenger
+EXTEND_TOP ~%BaldursGateDocks_BCS%.bcs~ ~PartyToDieFor/Scripts/AR1200.baf~ //spawns adrik
 EXTEND_TOP ~g_mmi.bcs~ ~PartyToDieFor/Scripts/g_mmi.baf~ //bunches of stuff
 EXTEND_TOP ~g_mmih1.bcs~ ~PartyToDieFor/Scripts/g_mmih1.baf~ //spawns partiers
 EXTEND_TOP ~g_mmih3.bcs~ ~PartyToDieFor/Scripts/g_mmih3.baf~ //deadEB
@@ -194,7 +197,7 @@ COMPILE ~PartyToDieFor/Scripts/g_mmMu.baf~
 COMPILE ~PartyToDieFor/dialogues/d_mmCA.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmDr.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmEB.d~ EVALUATE_BUFFER
-COMPILE ~PartyToDieFor/dialogues/d_mmff.d~
+COMPILE ~PartyToDieFor/dialogues/d_mmff.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmia.d~
 COMPILE ~PartyToDieFor/dialogues/d_mmia2.d~ EVALUATE_BUFFER
 COMPILE ~PartyToDieFor/dialogues/d_mmiM.d~ EVALUATE_BUFFER

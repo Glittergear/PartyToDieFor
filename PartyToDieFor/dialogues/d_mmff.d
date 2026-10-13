@@ -20,12 +20,12 @@ END
 
 IF ~~ THEN BEGIN leave
 	SAY @8 /* Let's get out of here. */
-		IF ~~ THEN DO ~ActionOverride(Player1,LeaveAreaLUA("AR1200","",[2507.1809],4))
-						ActionOverride(Player2,LeaveAreaLUA("AR1200","",[2510.1840],4))
-						ActionOverride(Player3,LeaveAreaLUA("AR1200","",[2544.1850],4))
-						ActionOverride(Player4,LeaveAreaLUA("AR1200","",[2492.1837],4))
-						ActionOverride(Player5,LeaveAreaLUA("AR1200","",[2461.1813],4))
-						ActionOverride(Player6,LeaveAreaLUA("AR1200","",[2471.1797],4))
+		IF ~~ THEN DO ~ActionOverride(Player1,LeaveAreaLUA("%BaldursGateDocks%","",[2507.1809],4))
+						ActionOverride(Player2,LeaveAreaLUA("%BaldursGateDocks%","",[2510.1840],4))
+						ActionOverride(Player3,LeaveAreaLUA("%BaldursGateDocks%","",[2544.1850],4))
+						ActionOverride(Player4,LeaveAreaLUA("%BaldursGateDocks%","",[2492.1837],4))
+						ActionOverride(Player5,LeaveAreaLUA("%BaldursGateDocks%","",[2461.1813],4))
+						ActionOverride(Player6,LeaveAreaLUA("%BaldursGateDocks%","",[2471.1797],4))
 						DestroySelf()~ EXIT
 END
 
