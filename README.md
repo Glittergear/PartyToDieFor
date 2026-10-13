@@ -98,5 +98,7 @@ None known. Let me know if you find any.
 - CpmVars / Autotra / IconV
 - Label / Require_predicate / Designated / Ini / Readme / WeiduModPackager
 - Delete old map notes en unused entrances / triggers
+- Simplified chinese by MephistoSatanDevil
+- Fix a few cpmvars that were not replaced correctly thanks to @MephistoSatanDevil
 
 1.0 Initial release
