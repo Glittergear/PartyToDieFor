@@ -1,0 +1,11 @@
+@0    = ~Par les dieux ! Qu'est-ce qui s'est passé ici ?~
+@1    = ~(Expliquer ce qui s'est passé.)~
+@2    = ~On dirait que votre récit correspond à la confession trouvée sur le corps de Zashir. Quelle psychopathe !~
+@3    = ~On peut partir, maintenant ? Je veux quitter cet endroit immédiatement.~
+@4    = ~Au fait, comment saviez-vous que j'étais ici ?~
+@5    = ~Nous avons reçu un signalement indiquant que vous aviez embarqué avec Adrik. C'est un criminel notoire, recherché pour enlèvements et pour avoir organisé un trafic d'esclaves pour le Zhentarim. Cela nous a pris du temps, mais nous avons fini par comprendre qu'il était parti pour cette île avec vous, alors nous avons suivi sa piste. Dieux, si seulement nous étions arrivés plus tôt ! Voulez-vous retourner à la Porte ?~
+@6    = ~Oui.~
+@7    = ~Pas encore.~
+@8    = ~Partons d'ici.~
+@9    = ~Eh bien, revenez me voir quand vous voudrez partir.~
+@10   = ~On y va ?~

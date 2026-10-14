@@ -1,0 +1,10 @@
+@0    = ~Ah, vous devez être <CHARNAME>, le héros de Nashkel ! J'espère que votre séjour à la Porte de Baldur vous plaît jusqu'ici. Celle qui m'emploie, Zashir Anskuln, souhaite vous inviter sur l'île de la Retraite des Ducs. Lorsque vous voudrez embarquer, adressez-vous au capitaine Adrik devant le bâtiment du maître du port, près des quais.~
+@1    = ~La Retraite des Ducs ? Oh, <CHARNAME>, j'ai toujours rêvé d'y aller ! C'est très exclusif. On raconte que la nouvelle propriétaire n'habite même pas à la Porte de Baldur !~
+@2    = ~Qui est Zashir Anskuln ?~
+@3    = ~Que pouvez-vous me dire sur l'île ?~
+@4    = ~Dois-je apporter quelque chose ?~
+@5    = ~Merci. Je vais prendre l'invitation.~
+@6    = ~À vrai dire, je n'en sais rien. Je ne l'ai jamais rencontrée. Elle a envoyé une lettre à la guilde des Messagers pour demander que quelqu'un vous remette cette invitation, ainsi qu'à plusieurs autres personnes. J'imagine que vos exploits le long de la Côte des Épées vous ont valu cette invitation.~
+@7    = ~Elle appartenait autrefois à un noble nommé Tyndal Marlow, qui l'a vendue lorsqu'il est parti s'installer à Eauprofonde. Elle appartient maintenant à Zashir Anskuln. D'après ce que j'ai compris, Zashir souhaite perpétuer la tradition de Tyndal et y organiser des réceptions privées pour gens fortunés. J'imagine que vos exploits le long de la Côte des Épées vous ont valu cette invitation.~
+@8    = ~Je ne peux pas vous l'affirmer, mais je ne pense pas que ce soit nécessaire. Si les réceptions de Zashir ressemblent à celles de Tyndal Marlow, tout devrait être aussi exceptionnel que parfaitement prévu.~
+@9    = ~Parfait. Inutile de vous soucier des frais de messager : Zashir s'en est déjà chargée. Bon <DAYNIGHT>, <LADYLORD>.~
