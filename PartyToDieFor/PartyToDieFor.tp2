@@ -73,6 +73,10 @@ LANGUAGE ~Simplified Chinese~
          ~schinese~
          ~PartyToDieFor/Languages/schinese/setup.tra~
 
+LANGUAGE French (by Deratiseur)~
+         ~french~
+         ~PartyToDieFor/Languages/french/setup.tra~
+
 BEGIN  @1 /* A Party to Die For */
 DESIGNATED 0
 LABEL ~A-Party_to-Die-For-Glittergear~
