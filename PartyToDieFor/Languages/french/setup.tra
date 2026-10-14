@@ -1,0 +1,170 @@
+@0    = ~Ce mod nécessite BGEE, BGT ou EET~
+@1    = ~Une réception à en mourir~
+@2    = ~Carasta Orsmander~
+@3    = ~Drunlo~
+@4    = ~Enger Blazanar~
+@5    = ~Poing Enflammé~
+@6    = ~Capitaine Adrik~
+@7    = ~Messager~
+@8    = ~Zashir Anskuln~
+@9    = ~Pelial~
+@10   = ~Tremona~
+@11   = ~Tenadar Thornber~
+@12   = ~Adrik zombie~
+@13   = ~Confession de Zashir~
+@14   = ~Au Poing Enflammé, ou à quiconque trouvera cette lettre,
+
+Dès ma jeunesse, j'ai compris que ma nature était contradictoire : je désirais l'Équilibre, tout en me délectant du chaos. Passionnée par la justice, mais tentée par le sang.
+
+En quête de paix intérieure et d'équilibre, je suis devenue druide. Un jour, une enfant fuyant des esclavagistes s'est réfugiée dans ma forêt. Je l'ai défendue contre eux. Elle s'est échappée, mais j'ai été capturée à sa place.
+
+Les esclavagistes nous ont envoyés, moi et d'autres, dans un temple de Bhaal pour y être sacrifiés, et là, mon désir de tuer a refait surface. Nous avons réussi à nous échapper. J'ai pris soin de mes compagnons du mieux que j'ai pu. Pourtant, ils sont morts les uns après les autres, victimes de la cruauté d'autrui.
+
+Je n'arrivais pas à chasser leur souvenir de mon esprit. Nous avions échappé au culte de Bhaal, mais le Meurtre nous a tout de même réclamés. Tous, sauf moi. Je suis devenue aventurière pour me distraire. Tuer des demi-humains en maraude, détruire des morts-vivants... cela ne me satisfaisait guère.
+
+Lorsque j'ai été frappée d'un mystérieux mal qui me consumait peu à peu, et qu'aucune magie ne semblait pouvoir guérir, j'ai su quel serait mon dernier souhait.
+
+Commettre un meurtre. Prémédité, planifié. Ce serait différent des victimes que j'avais faites en tant qu'aventurière. Mais je ne tuerais pas des innocents, non. Je tuerais d'autres meurtriers, ceux que la loi refusait de toucher.
+
+Chaque personne présente sur cette île, à une exception près, est responsable de la mort d'au moins une personne que j'avais prise sous ma protection :
+
+Capitaine Adrik : le capitaine du navire qui nous a conduits au temple de Bhaal.
+Capitaine Pelial : le capitaine pirate qui a pillé le navire d'Adrik, emporté les objets de valeur, mais ne nous a pas libérés.
+Enger Blazanar : a détourné l'argent d'une œuvre caritative. En conséquence, il n'y avait pas assez de potions de soins, et l'un des nôtres est mort de ses blessures.
+Tenadar Thornber : adorateur de Loviatar, il a engagé trois personnes et en a torturé deux à mort. La troisième a réussi à s'enfuir.
+Carasta Orsmander : a manipulé les tribunaux pour empêcher que Tenadar soit reconnu coupable. La personne qui lui avait échappé a été retrouvée morte peu après.
+Tremona : a présenté le dernier d'entre nous à Drunlo.
+Drunlo : lui a fait découvrir le Lotus noir, et elle est morte d'une overdose un an plus tard.
+
+Je les tuerai, un par un.
+
+Et j'y prendrai plaisir.
+ ~
+@15   = ~Invitation de Carasta~
+@16   = ~	Très chère Carasta Orsmander,
+J'ai entendu dire que, parmi toute la noblesse de la Porte de Baldur, vous étiez la personne qu'il fallait absolument rencontrer. On dit que vous n'avez pas votre pareille dans les cercles mondains et que vous êtes le genre de noble qui sait obtenir des résultats.
+
+J'admire beaucoup de telles qualités. Je suis une aventurière ayant amassé une fortune respectable au Calimshan, bien que je sois originaire de la Porte de Baldur. J'ai récemment acheté l'île de la Retraite des Ducs et, si vous l'acceptez, ce serait un honneur pour moi d'y recevoir une femme telle que vous.
+
+Si cette invitation vous agrée, présentez-la au capitaine Adrik. J'ai pris mes dispositions pour qu'il vous conduise sur l'île.
+
+	Bien à vous,
+	Zashir Anskuln
+ ~
+@17   = ~Invitation d'Enger~
+@18   = ~	Mon très cher Enger,
+Vous ne vous souvenez peut-être pas de moi, mais il y a des années, j'ai bénéficié de l'une de vos œuvres caritatives, et elle m'a sauvé la vie. Par la suite, je suis partie au sud, au Calimshan, où je me suis fait un nom comme aventurière.
+
+Je vous dois néanmoins tout cela. Si vous ne m'aviez pas sauvé la vie il y a tant d'années, aucune de mes réussites n'aurait été possible.
+
+J'ai amassé une fortune modeste et une immense nostalgie de mon pays. Je vais donc revenir à la Porte de Baldur. J'ai récemment acheté l'île de la Retraite des Ducs, et ce serait un honneur d'y recevoir celui qui m'a sauvé la vie tant d'années auparavant.
+
+Présentez cette invitation au capitaine Adrik. J'ai pris mes dispositions pour qu'il vous conduise sur l'île.
+
+	Bien à vous,
+	Zashir Anskuln
+ ~
+@19   = ~Invitation de Tenadar~
+@20   = ~Cher Tenadar Thornber,
+
+Vous et moi servons la même Maîtresse. Je souhaiterais vous inviter sur l'île de la Retraite des Ducs. J'y organise une réception qui, je pense, saura vous divertir.
+
+Adressez-vous au capitaine Adrik. J'ai pris les dispositions nécessaires pour votre transport jusqu'à l'île.
+
+	Bien à vous,
+	Zashir Anskuln
+ ~
+@21   = ~Invitation d'Adrik~
+@22   = ~	Cher capitaine Adrik,
+
+J'ai entendu parler de vos talents de capitaine et souhaiterais faire appel à vos services pour une tâche mineure. J'ai récemment acheté l'île de la Retraite des Ducs, où j'invite plusieurs personnes pour une réception.
+
+Il y aura sept invités, plus moi-même. Je vous paierai la somme généreuse de 2 000 pièces d'or par personne, soit un total de 16 000 pièces d'or. Je sais que vous êtes très occupé et j'espère que le montant proposé sera suffisant.
+
+Veuillez me faire connaître votre réponse dès que possible.
+
+	Avec mes meilleurs sentiments,
+	Zashir Anskuln
+ ~
+@23   = ~Invitation de Drunlo~
+@24   = ~Cher Drunlo,
+
+J'ai entendu parler de vos talents d'alchimiste et de votre soif de connaissances. Dans les cercles de la magie, on parle de vous comme d'un alchimiste plein de promesses.
+
+C'est pourquoi je souhaiterais vous inviter sur l'île de la Retraite des Ducs à l'occasion d'un colloque d'alchimie. Oui, sous la propriété de Tyndal Marlow, l'île était connue pour ses fêtes, mais depuis que je l'ai achetée, je souhaite lui bâtir une nouvelle réputation.
+
+Ne vous souciez pas d'apporter votre propre matériel d'alchimie. Je veillerai à ce que le colloque dispose de tout le nécessaire. Vous n'avez pas non plus à vous inquiéter des frais : cette invitation couvre entièrement votre séjour.
+
+Si cela vous convient, présentez cette invitation au capitaine Adrik. J'ai pris mes dispositions pour qu'il vous conduise sur l'île.
+
+	Bien à vous,
+	Zashir Anskuln
+ ~
+@25   = ~Invitation de Tremona~
+@26   = ~ Invitation de Tremona~
+@27   = ~(Ceci est écrit dans une sorte de code que vous ne reconnaissez pas.)~
+@28   = ~Invitation de Pelial~
+@30   = ~Capitaine Pelial,
+
+Je vous écris avec le plus grand respect. Je sais que vous êtes aussi capable sur terre que sur mer, et j'ai entendu certaines rumeurs qui pourraient vous intéresser.
+
+J'ai récemment acheté l'île de la Retraite des Ducs et, en examinant les actes de propriété, j'ai découvert un fait des plus intéressants. Il semblerait qu'un ancien seigneur pirate de Brynnlaw ait enterré un trésor sur l'île !
+
+Je sais que vous excellez à retrouver ce genre de trésors, bien mieux que moi, j'en suis certaine. C'est pourquoi je souhaiterais vous inviter sur l'île. Je serais ravie de partager le butin à raison de 60 % pour vous et 40 % pour moi.
+
+Si, par extraordinaire, le trésor ne suffit pas à vous tenter, j'organiserai également une réception. Je souhaite être à la hauteur de la réputation de mon prédécesseur, aussi nourriture, boissons et divertissements seront-ils abondants.
+
+Veuillez me faire savoir dès que possible si vous pourrez être présent.
+
+	Avec mes meilleurs sentiments,
+	Zashir Anskuln
+ ~
+@31   = ~Invitation de Zashir~
+@32   = ~À <CHARNAME> et sa compagnie,
+
+J'ai l'honneur de vous inviter à ma première réception sur l'île de la Retraite des Ducs. J'ignore si vous connaissez l'histoire de l'île, mais son précédent propriétaire y organisait de nombreux séjours et fêtes réservés à quelques privilégiés. J'espère perpétuer cette tradition.
+
+Vos exploits dans la région, notamment à Nashkel, ont attiré mon attention, et ce serait un honneur de recevoir un aventurier tel que vous. Les autres invités seront des aventuriers ainsi que quelques membres de la noblesse de la Porte de Baldur.
+
+Si la perspective de vous détendre ne suffit pas à vous tenter, peut-être ceci le fera-t-il : je possède des informations sur le Trône de Fer. Je serai moi aussi sur l'île et serai heureuse de vous dire ce que je sais. J'espère que vous comprendrez que je ne peux vous en parler qu'en personne : coucher de telles informations sur le papier nous mettrait tous deux en danger, ainsi que le messager chargé de vous remettre cette invitation. J'espère que vous ne me tiendrez pas rigueur de cette prudence.
+
+Bien à vous,
+Zashir Anskuln
+
+ ~
+@34   = ~Première comptine~
+@35   = ~La première petite mouche du navire est tombée ; les vagues l'ont réclamée, comme tant de ses esclaves noyés.~
+@36   = ~Deuxième comptine~
+@37   = ~Vous avez tous vécu dans le mensonge. Pris dans ma toile, la mort vous ronge.~
+@38   = ~Troisième comptine~
+@39   = ~Le troisième à mourir feignait d'avoir du cœur, pour mieux amasser toujours plus sans pudeur.~
+@40   = ~Quatrième comptine~
+@41   = ~Rideau pour la marionnettiste. Sa mort fut sans histoire ; vous n'êtes plus que quatre ce soir.~
+@42   = ~Cinquième comptine~
+@43   = ~D'autres sont morts pour des paroles mensongères. Sur huit mouches, il n'en reste plus que deux sur cette terre.~
+@44   = ~Dernière comptine~
+@45   = ~Les invités avaient oublié, mais moi je me souvenais. Pour tout ce qu'ils avaient fait, huit mouches disparaîtraient.~
+@46   = ~Poison étrange~
+@47   = ~Vous ne devriez probablement pas boire ceci.~
+@48   = ~Dague ouvragée~
+@49   = ~Cette dague empoisonnée est richement ouvragée et sert probablement lors des cérémonies de quelque divinité maléfique.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- La cible touchée subit 1 point de dégâts de poison par seconde pendant 15 secondes (un jet de sauvegarde contre le poison annule l'effet)
+
+TAC0 : +2
+Dégâts : 1d4+2 (perforants)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type : arme à une main
+Force requise :
+ 3
+
+Poids : 2~
+@50   = ~Deuxième hutte~
+@51   = ~Première hutte~
+@52   = ~Troisième hutte~
+@53   = ~Quatrième hutte~
+@54   = ~Salle à manger~
