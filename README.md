@@ -97,8 +97,9 @@ None known. Let me know if you find any.
 1.1 Translation, Traification, EET
 - CpmVars / Autotra / IconV
 - Label / Require_predicate / Designated / Ini / Readme / WeiduModPackager
-- Delete old map notes en unused entrances / triggers
+- Delete old map notes and unused entrances / triggers
 - Simplified chinese by MephistoSatanDevil
 - Fix a few cpmvars that were not replaced correctly thanks to @MephistoSatanDevil
+- French translation by IA
 
 1.0 Initial release
